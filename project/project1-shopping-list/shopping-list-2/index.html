@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Warunk</h1>
+    <table>
+      <thead>
+        <th>No</th>
+        <th>Barang</th>
+        <th>Harga</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>kaos</td>
+          <td>Rp.70000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>kemeja</td>
+          <td>Rp.150000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>jaket</td>
+          <td>Rp.200000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>chinos</td>
+          <td>Rp.150000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>cargo</td>
+          <td>Rp.170000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <form action="" id="shopping-form">
+        <input type="text" placeholder="Masukan barang" id="item" />
+        <!-- <button type="submit" id="submit">Add</button> -->
+        <input type="submit" name="add" value="Add" />
+      </form>
+
+      <ul class="shopping-list"></ul>
+
+      <p class="price">total : Rp.<span class="total-price">0</span></p>
+      <p class="discount"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

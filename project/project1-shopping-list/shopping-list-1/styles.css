@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.price-list {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+}
+
+.price-list div {
+  border: 1px solid;
+}

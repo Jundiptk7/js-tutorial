@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="price-list">
+      <div class="tHead">NO</div>
+      <div class="tHead">Daftar barang</div>
+      <div class="tHead">Harga</div>
+      <div class="tBody">1</div>
+      <div class="tBody">wortel</div>
+      <div class="tBody">Rp.3000</div>
+      <div class="tBody">2</div>
+      <div class="tBody">sawi</div>
+      <div class="tBody">Rp.4500</div>
+      <div class="tBody">3</div>
+      <div class="tBody">kangkung</div>
+      <div class="tBody">Rp.2500</div>
+      <div class="tbody">4</div>
+      <div class="tbody">brokoli</div>
+      <div class="tbody">Rp.8000</div>
+      <div class="tbody">5</div>
+      <div class="tbody">kacang panjang</div>
+      <div class="tbody">Rp.2000</div>
+    </div>
+
+    <h1>Shooping List</h1>
+    <form action="#" id="shopping-form">
+      <input type="text" id="item" placeholder="add item" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="shopping-list"></ul>
+
+    <p class="price">total</p>
+
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="price-list">
+      <div class="tHead">NO</div>
+      <div class="tHead">Daftar barang</div>
+      <div class="tHead">Harga</div>
+      <div class="tBody" data-item="wortel" data-price="3000">1</div>
+      <div class="tBody">wortel</div>
+      <div class="tBody">Rp.3000</div>
+      <div class="tBody" data-item="sawi" data-price="4500">2</div>
+      <div class="tBody">sawi</div>
+      <div class="tBody">Rp.4500</div>
+      <div class="tBody" data-item="kangkung" data-price="2500">3</div>
+      <div class="tBody">kangkung</div>
+      <div class="tBody">Rp.2500</div>
+      <div class="tBody" data-item="brokoli" data-price="8000">4</div>
+      <div class="tBody">brokoli</div>
+      <div class="tBody">Rp.8000</div>
+      <div class="tBody" data-item="kacang panjang" data-price="2000">5</div>
+      <div class="tBody">kacang panjang</div>
+      <div class="tBody">Rp.2000</div>
+    </div>
+
+    <h1>Shopping List</h1>
+    <form action="#" id="shopping-form">
+      <input type="text" id="item" placeholder="add item" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="shopping-list"></ul>
+
+    <p class="price">Total: Rp. <span id="total-price">0</span></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
