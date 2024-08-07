@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     saveTasks();
     renderTasks();
   }
-
   taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const text = taskInput.value.trim();
