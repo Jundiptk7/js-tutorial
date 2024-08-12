@@ -94,7 +94,7 @@ function tampilkanLaporanNilai(siswa) {
   siswa.forEach((s) => {
     console.log(`${s.nama}: ${s.nilai} (${s.huruf} - ${s.deskripsi})`);
   });
-  console.table(siswa);
+  // console.table(siswa);
 }
 
 const dataSiswa = inputDataSiswa();

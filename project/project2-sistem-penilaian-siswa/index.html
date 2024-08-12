@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Penilaian Siswa</h1>
+    <form action="" id="form-penilaian">
+      <select name="mapel" id="mata-pelajaran">
+        <option value="">Pilih Mapel</option>
+        <option value="MTK">MTK</option>
+        <option value="IPA">IPA</option>
+        <option value="IPS">IPS</option>
+        <option value="B.Indonesia">B.Indonesia</option>
+        <option value="PAI">PAI</option>
+        <option value="PKN">PKN</option>
+      </select>
+      <div>
+        <label for="nama-siswa">Masukan nama siswa</label>
+        <input type="text" placeholder="siswa" id="nama-siswa" />
+      </div>
+      <div>
+        <label for="nilai-siswa">Masukan nilai siswa</label>
+        <input type="text" placeholder="nilai" id="nilai-siswa" />
+      </div>
+      <button type="submit" id="input-btn">Input</button>
+    </form>
+    <div id="hasil-penilaian"></div>
     <script src="script.js"></script>
   </body>
 </html>
