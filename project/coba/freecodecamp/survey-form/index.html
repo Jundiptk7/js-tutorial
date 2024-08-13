@@ -4,14 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam.</p>
-    <form action="post" id="survey-form">
-      <input type="text" name="name" id="name" required />
-      <input type="email" name="email" id="email" required />
-      <input type="number" id="number" required min="1" max="100" />
-    </form>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, veniam.</p>
+      </header>
+      <form action="post" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label"> Name: </label>
+          <input type="text" name="name" id="name" required placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label"> Email: </label>
+          <input type="email" name="email" id="email" required placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label"> number: </label>
+          <input type="number" id="number" required min="1" max="100" placeholder="number" />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">
+            dropdown
+            <select name="dropdown" id="dropdown">
+              <option value="a">a</option>
+              <option value="b">b</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="">
+            radio
+            <label for="x"><input type="radio" name="kind" value="x" />x</label>
+            <label for="z"><input type="radio" name="kind" value="z" />z</label>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="">
+            checkbox
+            <label for=""><input type="checkbox" value="w" />w</label>
+            <label for=""><input type="checkbox" value="y" />y</label>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="comment">
+            comment
+            <textarea name="comment" id="comment" rows="3" cols="30"></textarea>
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
